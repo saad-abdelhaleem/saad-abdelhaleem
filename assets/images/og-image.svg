@@ -1,0 +1,51 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080d18"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Accent line -->
+  <rect x="0" y="0" width="6" height="630" fill="#3f8fd9"/>
+
+  <!-- Main initials -->
+  <text x="600" y="290" font-family="'Segoe UI', system-ui, sans-serif" font-size="220" font-weight="700" fill="#3f8fd9" text-anchor="middle" opacity="0.15">SA</text>
+  <text x="600" y="270" font-family="'Segoe UI', system-ui, sans-serif" font-size="180" font-weight="700" fill="#3f8fd9" text-anchor="middle">SA</text>
+
+  <!-- Name -->
+  <text x="600" y="370" font-family="'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="2">Saad Abdelhaleem</text>
+
+  <!-- Title -->
+  <text x="600" y="430" font-family="'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="400" fill="#7c8aa3" text-anchor="middle" letter-spacing="1">Senior Full Stack .NET Developer</text>
+
+  <!-- Tech tags -->
+  <g transform="translate(600, 510)">
+    <!-- .NET tag -->
+    <rect x="-295" y="-22" width="90" height="36" rx="6" fill="#1a2535" stroke="#3f8fd9" stroke-width="1"/>
+    <text x="-250" y="4" font-family="monospace" font-size="16" fill="#3f8fd9" text-anchor="middle">.NET</text>
+
+    <!-- C# tag -->
+    <rect x="-185" y="-22" width="80" height="36" rx="6" fill="#1a2535" stroke="#7c8aa3" stroke-width="1"/>
+    <text x="-145" y="4" font-family="monospace" font-size="16" fill="#7c8aa3" text-anchor="middle">C#</text>
+
+    <!-- React tag -->
+    <rect x="-85" y="-22" width="90" height="36" rx="6" fill="#1a2535" stroke="#7c8aa3" stroke-width="1"/>
+    <text x="-40" y="4" font-family="monospace" font-size="16" fill="#7c8aa3" text-anchor="middle">React</text>
+
+    <!-- Azure tag -->
+    <rect x="25" y="-22" width="90" height="36" rx="6" fill="#1a2535" stroke="#7c8aa3" stroke-width="1"/>
+    <text x="70" y="4" font-family="monospace" font-size="16" fill="#7c8aa3" text-anchor="middle">Azure</text>
+
+    <!-- SQL tag -->
+    <rect x="135" y="-22" width="160" height="36" rx="6" fill="#1a2535" stroke="#7c8aa3" stroke-width="1"/>
+    <text x="215" y="4" font-family="monospace" font-size="16" fill="#7c8aa3" text-anchor="middle">SQL Server</text>
+  </g>
+
+  <!-- URL -->
+  <text x="600" y="605" font-family="monospace" font-size="20" fill="#3f3f3f" text-anchor="middle">saad-abdelhaleem.vercel.app</text>
+</svg>
