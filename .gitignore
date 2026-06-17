@@ -33,4 +33,4 @@ Thumbs.db
 npm-debug.log*
 
 .vercel
-.claude/settings.json
+.claude
