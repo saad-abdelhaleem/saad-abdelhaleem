@@ -15,7 +15,16 @@
       "Bash(npx --yes gh --version)",
       "Bash(npx --yes vercel whoami)",
       "Bash(npx --yes vercel project ls --help)",
-      "Bash(npx --yes vercel git connect --help)"
+      "Bash(npx --yes vercel git connect --help)",
+      "PowerShell(gh run view 27714882689 --log-failed 2>&1)",
+      "Read(//c/Program Files/**)",
+      "Read(//d//**)",
+      "WebFetch(domain:github.com)",
+      "Bash(grep -ril \"vercel\" \"C:/Users/Saad/.claude/projects/d--00-Work-saad-abdelhaleem/memory/\" 2>/dev/null)",
+      "Read(//c/Users/Saad/.claude/projects/d--00-Work-saad-abdelhaleem/memory/**)",
+      "WebFetch(domain:api.github.com)",
+      "mcp__claude_ai_Vercel__list_teams",
+      "mcp__claude_ai_Vercel__list_projects"
     ]
   }
 }
