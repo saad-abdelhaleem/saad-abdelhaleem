@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(curl -s \"https://api.github.com/repos/saad-abdelhaleem/saad-abdelhaleem/actions/runs?per_page=1\")",
+      "mcp__claude_ai_Vercel__list_deployments",
+      "Bash(npx --yes vercel --version)",
+      "Bash(npx --yes vercel deploy --prod --yes)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://saad-abdelhaleem.vercel.app/favicon.ico)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://saad-abdelhaleem.vercel.app/assets/favicon/site.webmanifest)",
+      "Bash(curl -s https://saad-abdelhaleem.vercel.app/)",
+      "Bash(npx --yes vercel project ls)",
+      "Bash(npx --yes vercel git connect)",
+      "Bash(env)",
+      "Bash(npx --yes gh --version)",
+      "Bash(npx --yes vercel whoami)",
+      "Bash(npx --yes vercel project ls --help)",
+      "Bash(npx --yes vercel git connect --help)"
+    ]
+  }
+}
