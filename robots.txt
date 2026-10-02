@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /assets/js/
 
-Sitemap: https://saad-abdelhaleem.vercel.app/sitemap.xml
+Sitemap: https://saad-abdelhaleem.saad-abdelhaleem.workers.dev/sitemap.xml
