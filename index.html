@@ -103,7 +103,6 @@ img{display:block}
       <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;animation:fadeUp .8s .28s both">
         <a href="{{ linkedin }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,0) 45%),linear-gradient(175deg,#f6c46f,#dd8f3c 55%,#c97a2e);color:#2c1806;font-weight:700;font-size:15px;text-decoration:none;border:1px solid rgba(255,224,180,.55);box-shadow:inset 0 1px 0 rgba(255,255,255,.65),inset 0 -1px 2px rgba(120,58,10,.4),0 1px 0 rgba(0,0,0,.18),0 10px 28px rgba(196,110,40,.4);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease" style-hover="filter:brightness(1.08);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 2px rgba(120,58,10,.4),0 1px 0 rgba(0,0,0,.18),0 16px 36px rgba(196,110,40,.5)" style-active="transform:translateY(0) scale(.98);filter:brightness(.96);box-shadow:inset 0 1px 3px rgba(90,40,5,.5),inset 0 -1px 0 rgba(255,255,255,.25),0 4px 10px rgba(196,110,40,.35)">LinkedIn ↗</a>
         <a href="{{ github }}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 60%),rgba(255,240,230,.05);color:#f3e4da;font-weight:600;font-size:15px;text-decoration:none;border:1px solid rgba(255,225,200,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),inset 0 -1px 2px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.28);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease" style-hover="border-color:rgba(233,166,60,.65);background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.03) 60%),rgba(255,240,230,.09);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 2px rgba(0,0,0,.35),0 10px 26px rgba(0,0,0,.35)" style-active="transform:translateY(0);box-shadow:inset 0 1px 3px rgba(0,0,0,.4),inset 0 -1px 0 rgba(255,255,255,.1),0 3px 8px rgba(0,0,0,.3)">GitHub ↗</a>
-        <a href="#" onclick="{{ openRevision }}" style="display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.02) 60%),rgba(255,240,230,.05);color:#f3e4da;font-weight:600;font-size:15px;text-decoration:none;border:1px solid rgba(255,225,200,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),inset 0 -1px 2px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.28);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease;cursor:pointer" style-hover="border-color:rgba(233,166,60,.65);background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.03) 60%),rgba(255,240,230,.09);transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.22),inset 0 -1px 2px rgba(0,0,0,.35),0 10px 26px rgba(0,0,0,.35)" style-active="transform:translateY(0);box-shadow:inset 0 1px 3px rgba(0,0,0,.4),inset 0 -1px 0 rgba(255,255,255,.1),0 3px 8px rgba(0,0,0,.3)">Revision ↗</a>
         <a href="#experience" style="display:inline-flex;align-items:center;gap:9px;padding:14px 18px;border-radius:11px;color:#b39a92;font-weight:500;font-size:15px;text-decoration:none;transition:color .2s" style-hover="color:#f6c46f">View work ↓</a>
       </div>
     </div>
@@ -220,8 +219,29 @@ img{display:block}
     </div>
   </section>
 
+  <section id="live" style="scroll-margin-top:88px;padding:clamp(70px,9vw,116px) clamp(18px,5vw,56px);max-width:1120px;margin:0 auto;border-top:1px solid rgba(255,214,180,.09)">
+    <div data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);font-family:'DM Mono';font-size:12px;letter-spacing:2px;color:#e9a63c;text-transform:uppercase;margin-bottom:14px">05 / Live Work</div>
+    <h2 data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);font-family:'Bricolage Grotesque';font-weight:600;font-size:clamp(26px,3.6vw,38px);letter-spacing:-1.2px;margin:0 0 38px;color:#fbf4ee">Recently shipped — live now.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px">
+      <sc-for list="{{ liveLinks }}" as="site" hint-placeholder-count="4">
+        <a href="{{ site.url }}" target="_blank" rel="noopener" data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.16,.84,.44,1),transform .6s cubic-bezier(.16,.84,.44,1),border-color .3s,box-shadow .3s;display:flex;flex-direction:column;padding:24px;border-radius:18px;background:linear-gradient(180deg,rgba(255,236,220,.055),rgba(255,236,220,.015));border:1px solid rgba(255,214,180,.11);color:inherit;text-decoration:none" style-hover="border-color:rgba(233,166,60,.45);box-shadow:0 24px 50px rgba(0,0,0,.42)">
+          <span style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span style="font-family:'DM Mono';font-size:11px;letter-spacing:1.4px;color:#f0b558;text-transform:uppercase">{{ site.kind }}</span>
+            <span style="font-family:'DM Mono';font-size:15px;color:#f0b558">↗</span>
+          </span>
+          <span style="display:block;font-family:'Bricolage Grotesque';font-weight:600;font-size:20px;margin-top:14px;color:#fbf4ee">{{ site.name }}</span>
+          <sc-if value="{{ site.nameAr }}">
+            <span dir="rtl" lang="ar" style="display:block;font-size:16px;margin-top:4px;color:#d6c2b8">{{ site.nameAr }}</span>
+          </sc-if>
+          <span style="display:block;font-size:14px;line-height:1.6;color:#c8b2a9;margin-top:10px;flex:1;font-weight:300">{{ site.desc }}</span>
+          <span style="display:block;margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,214,180,.11);font-family:'DM Mono';font-size:12px;color:#a2867e;overflow-wrap:anywhere">{{ site.host }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
   <section id="contact" style="scroll-margin-top:88px;position:relative;padding:clamp(80px,10vw,130px) clamp(18px,5vw,56px) 60px;max-width:1120px;margin:0 auto;border-top:1px solid rgba(255,214,180,.09)">
-    <div data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);font-family:'DM Mono';font-size:12px;letter-spacing:2px;color:#e9a63c;text-transform:uppercase;margin-bottom:18px">05 / Contact</div>
+    <div data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);font-family:'DM Mono';font-size:12px;letter-spacing:2px;color:#e9a63c;text-transform:uppercase;margin-bottom:18px">06 / Contact</div>
     
     <p data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);font-size:clamp(15px,1.8vw,18px);color:#cfb9b0;margin:22px 0 0;max-width:520px;font-weight:300">Open to senior .NET roles and freelance contracts. The fastest way to reach me:</p>
     <div data-reveal style="opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,.84,.44,1),transform .7s cubic-bezier(.16,.84,.44,1);display:flex;flex-wrap:wrap;gap:16px;margin-top:34px">
@@ -305,6 +325,15 @@ class Component extends DCLogic {
     { name:'Ibnsina Pharma', client:'Ibnsina · Egypt', period:'2021—22', desc:'Custom nopCommerce plugins to extend platform functionality and improve the commerce experience for a major pharma distributor.', stack:['nopCommerce 4.2','C#','Plugin Dev'], outcome:'Upgraded plugins from 3.9 to 4.2, ensuring compatibility and performance.' }
   ];
 
+  liveLinks = [
+    { name:'Backend Knowledge Map', kind:'Learning site', url:'https://full-stack-knowledge-map.vercel.app/', host:'full-stack-knowledge-map.vercel.app', desc:'Bilingual, interactive crash course mapping the backend landscape — concepts, technologies and best practices.' },
+    { name:'SoknaCost', kind:'SaaS', url:'https://soknacost.com/', host:'soknacost.com', desc:'Residential building expense management: monthly costs split across units by weight, owner dues, statements and maintenance requests.',
+      nameAr:
+        'سُكنة' },
+    { name:'WhatsApp Cloud Pulse', kind:'Newsletter', url:'https://whatsapp-cloud-news.saad-abdelhaleem.workers.dev/', host:'whatsapp-cloud-news.saad-abdelhaleem.workers.dev', desc:'Automated Arabic digest of WhatsApp Cloud API news — pricing changes, new features and technical updates every two days.' },
+    { name:'BiliBii International Academy', kind:'Client website', url:'https://bilibiinursery.com/', host:'bilibiinursery.com', desc:'Bilingual Arabic/English website for an international nursery in Cairo serving children aged 2–6.' }
+  ];
+
   rootRef = (el) => { if (el) { this._root = el; el.style.setProperty('--accent', this.props.accentColor || '#e9a63c'); } };
   progressRef = (el) => { this._progress = el; };
 
@@ -314,13 +343,6 @@ class Component extends DCLogic {
     if (navigator.clipboard && navigator.clipboard.writeText){
       navigator.clipboard.writeText(email).then(done).catch(done);
     } else { done(); }
-  };
-
-  openRevision = () => {
-    const p = window.prompt('Enter password:');
-    if (p === null) return;
-    if (p === 'Ihave2Learn') { window.open('https://full-stack-knowledge-map.vercel.app/', '_blank'); }
-    else { window.alert('Incorrect password'); }
   };
 
   onScroll = () => {
@@ -372,8 +394,8 @@ class Component extends DCLogic {
       skillGroups: this.skillGroups,
       experiences: exps,
       projects: this.projects,
+      liveLinks: this.liveLinks,
       copyEmail: this.copyEmail,
-      openRevision: this.openRevision,
       copied: this.state.copied,
       notCopied: !this.state.copied,
       mailto: 'mailto:saad.abdelhaleem@gmail.com',
